@@ -3,28 +3,38 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Color Toggle</title>
-        <link rel="stylesheet" href="./style.css" type="text/css">
-        <script defer src="./script.js" type="text/javascript"></script>
-    </head>
-    <body>
-    	<header id="header">
-    		<h1>Color Toggle</h1>
 
-			<button class="hamburger-icon">
-				<img src="./hamburger_menu.png" alt="Hamburger menu icon">
+        <title>Color Toggle</title>
+
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <script defer src="./script.js"></script>
+    </head>
+    <body class='white'>
+    	<header id="header">
+    		<h1>Colour Toggle</h1>
+
+    		<button class="hamburger-icon">
+    			<img src="./img/hamburger_menu.png" alt="Hamburger menu icon">
 			</button>
 
-			<ul class="hamburger-menu">
-				<li class="black">#212121</li>
-				<li class="red">#E35252</li>
-				<li class="green">#6DA365</li>
-				<li class="blue">#CCAF64</li>
-				<li class="yellow">#7E85D6</li>
-				<li class="magenta">#CA6ECC</li>
-				<li class="cyan">#75C9B4</li>
-				<li class="lightgray">#DBDBDB</li>
-			</ul>
+    		<ul class="hamburger-menu">
+    			<li>
+
+    				<h6 class="menu-prompt">Select a colour:</h6>
+
+					<input type="checkbox" id="show-active-checkbox">
+    				<label for="show-active" class="show-active-label">show active</label>
+    			</li>
+
+    			<li class="black"></li>
+    			<li class="red"></li>
+    			<li class="green"></li>
+    			<li class="blue"></li>
+    			<li class="yellow"></li>
+    			<li class="magenta"></li>
+    			<li class="cyan"></li>
+    			<li class="white"></li>
+    		</ul>
     	</header>
     </body>
 </html>
