@@ -50,8 +50,7 @@ h1 {
 }
 
 .hamburger-menu li {
-	min-height: 3em;
-	height: 8vh;
+	height: 6vh;
 	width: 100%;
 	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5);
 }
@@ -64,14 +63,14 @@ h1 {
 
 .hamburger-menu li:first-child {
 	height: max-content;
-	padding-top: 2.5em;
-	padding-bottom: 1em;
 	background-color: #ffffff;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
 .menu-prompt {
 	font-size: 2em;
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5em;
 	text-align: center;
 }
 
@@ -79,31 +78,29 @@ h1 {
 	position: relative;
 	opacity: 0;
 	z-index: 2;
-	transform: scale(11, 1.5) translate(1.5em, 0);
+	transform: scale(7, 1.5) translate(22px, 14px);
+	cursor: pointer;
 }
 
 .show-active-label {
-	position: relative;
-	display: inline-block;
+	display: block;
+	width: max-content;
+	margin: 0 auto;
+	text-align: center;
 	color: gray;
-	margin-left: 11.8em;
+	border-radius: 10px;
+	padding: 0.2em 0.4em;
+	text-transform: uppercase;
+	font-size: 0.8em;
 }
 
-.show-active-label:before {
-	content: "";
-	position: absolute;
-	opacity: 1;
-	background-color: white;
-	border: 1px solid gray;
-	width: 10px;
-	height: 10px;
-	top: 4px;
-	left: 85px;
-	border-radius: 100%;
+#show-active-checkbox:hover + .show-active-label {
+	transform: scale(1.2) translateY(-1%);
 }
 
-#show-active-checkbox:checked + .show-active-label:before {
+#show-active-checkbox:checked + .show-active-label {
 	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.01);
 }
 
 .black {
@@ -142,4 +139,8 @@ h1 {
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 	margin: 1em 0;
 	transform: translate(-10%, 0);
+}
+
+.no-hover {
+	pointer-events: none;
 }
